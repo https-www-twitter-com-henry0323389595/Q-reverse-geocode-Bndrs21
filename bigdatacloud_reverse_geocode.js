@@ -27,7 +27,6 @@
 		},
 		getClientLocation:function(latLng,cb) {
 			var _this=this;
-
 			if (typeof latLng=='function' && !cb) {
 				cb=latLng;
 				latLng=null;
@@ -35,12 +34,9 @@
 				latLng=latLng();
 			}
 			if (!cb) return false;
-			if (!latLng) {
+			if (!latLng && latLng!=-1) {
 				return this.getClientCoordinates(function(position) {
-					if (!position) {
-						return cb(false);
-					}
-					_this.getClientLocation(position,cb);
+					_this.getClientLocation(position ? position : -1,cb);
 				})
 			} else {
 				this.callApi(this.processLatLng(latLng),function(result) {
@@ -52,6 +48,7 @@
 			}
 		},
 		processLatLng:function(latLng) {
+			if (!latLng || latLng==-1) return {};
 			if (latLng.coords) {
 				latLng=latLng.coords;
 			}
