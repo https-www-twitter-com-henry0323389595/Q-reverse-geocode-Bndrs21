@@ -48,6 +48,7 @@
 			}
 		},
 		processLatLng:function(latLng) {
+			var result={};
 			if (!latLng || latLng==-1) return {};
 			if (latLng.coords) {
 				latLng=latLng.coords;
@@ -66,12 +67,12 @@
 				}
 			}
 			if (typeof latLng.latitude!= 'undefined') {
-				latLng.latitude=parseFloat(parseFloat(latLng.latitude).toFixed(5));
+				result.latitude=parseFloat(parseFloat(latLng.latitude).toFixed(5));
 			}
 			if (typeof latLng.longitude!= 'undefined') {
-				latLng.longitude=parseFloat(parseFloat(latLng.longitude).toFixed(5));
+				result.longitude=parseFloat(parseFloat(latLng.longitude).toFixed(5));
 			}
-			return latLng;
+			return result;
 		},
 		callApi:function(payload,cb) {
 			var xhr = new XMLHttpRequest()
