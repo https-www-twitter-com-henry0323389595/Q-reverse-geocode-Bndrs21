@@ -17,7 +17,7 @@ This feature is only available in client-side use (see Usage limits below for mo
 ## Documentation
 
 Documentation specific to this Free API Client is detailed below.
-For more information on other available APIs, please visit our [API area](https://www.bigdatacloud.com/docs).
+For more information about the API, please visit [FREE Client-side Reverse Geocoding to City API](https://www.bigdatacloud.com/free-api/free-reverse-geocode-to-city-api).
 
 
 
@@ -32,7 +32,7 @@ You may use this API and client for Free without an account.
 
 This client-side API is completely FREE for both commercial and non-commercial use, including unlimited usage with no throttling or limitations.
 This particular API is for client-side use only. Any user found abusing this service by implementing it server-side will be blacklisted from all of our free Api Services.
-If you wish to utilise this Reverse Geocoding API in your backend applications, please visit our [server-side variation of this API](https://www.bigdatacloud.com/packages/reverse-geocoding) for pricing details.
+If you wish to utilise this Reverse Geocoding API in your backend applications, please visit our [server-side variation of this API](https://www.bigdatacloud.com/reverse-geocoding) for pricing details.
 
 
 
