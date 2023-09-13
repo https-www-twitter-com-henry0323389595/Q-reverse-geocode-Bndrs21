@@ -11,7 +11,7 @@ This client works without any Javascript dependencies and has no API key or acco
 This client now supports graceful fallback when a user denies accessing their device location.
 You can now get high quality location information on your users even when they do not provide their latitude/longitude.
 This feature is only available in client-side use (see Usage limits below for more information)
-[To find out how this works, view this news article](https://www.bigdatacloud.com/blog/new-feature-update-free-client-side-reverse-geocoding-api-with-ip-geolocation-fallback).
+[To find out how this works, view this blog post](https://www.bigdatacloud.com/blog/new-feature-update-free-client-side-reverse-geocoding-api-with-ip-geolocation-fallback).
 
 
 ## Documentation
